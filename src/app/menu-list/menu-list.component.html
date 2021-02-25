@@ -1,0 +1,19 @@
+<div class="menu">
+    <span (click)="display = !display" class="material-icons">menu</span>
+</div>
+
+<div class="desplegable" *ngIf="display">
+    <div class="user">
+        <span class="material-icons">person</span>
+        <p>{{username}}</p>
+        <span class="icon" (click)="display = !display"><</span>
+    </div>
+    <div class="list" *ngFor="let menu of menuList" (click)="list()">
+        <div class="img">
+            <img *ngIf="menu.img" src="../../assets/img/{{ menu.img }}.JPG" [alt]="menu.text">
+        </div>
+        <div class="info">
+            <p [routerLink]="'/' + menu.url" class="desc mb-0">{{ menu.text }}</p>
+        </div>
+    </div>
+</div>

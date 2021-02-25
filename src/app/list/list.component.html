@@ -1,0 +1,14 @@
+<div class="section">
+    <div class="search">
+        <img src="../../assets/img/search.JPG" alt="">
+        <div class="filter">Filtrar ></div>
+    </div>
+    <div class="list" *ngFor="let desc of descriptions" (click)="list()">
+        <img src="../../assets/img/{{ desc.img }}.JPG" alt="">
+        <div class="info">
+            <p class="desc">{{ desc.description }}</p>
+            <p class="status">{{ desc.status }}</p>
+        </div>
+        <span class="icon">></span>
+    </div>
+</div>

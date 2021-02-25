@@ -1,0 +1,28 @@
+<div class="backrground">
+    <div class="container">
+        <form (ngSubmit)="register(f)" #f="ngForm">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 m-auto logo">
+                    <img src="../../assets/img/logo.JPG" alt="">
+                    <p>XXXXX</p>
+                    <p>Buenas tardes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 m-auto form">
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control" id="userEmail" [(ngModel)]="userMail" autocomplete="off" name="userEmail" placeholder="Usuario o correo electrónico *" required>
+                    </div>
+                    <div class="input-group">
+                        <input [type]="type" class="form-control" id="password" [(ngModel)]="user.password" autocomplete="off" placeholder="Contraseña *" name="username" required>
+                        <div class="input-group-prepend" [ngClass]="{'iconInputError': (f.submitted && f.controls['username'].errors)}">
+                            <div class="input-group-text"><img (click)="type === 'password' ? type = 'text' : type = 'password' ;" src="../../assets/img/eye.JPG"></div>
+                        </div>
+                    </div>
+                    <p>Olvidé mi contraseña</p>
+                    <button type="submit">Iniciar sesión</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

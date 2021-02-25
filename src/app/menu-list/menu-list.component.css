@@ -1,0 +1,78 @@
+.menu span {
+    color: #FFF;
+    font-size: 34px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.desplegable {
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    width: 260px;
+    height: 100vh;
+}
+
+.desplegable .user {
+    background: #b9480e;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.desplegable .user span {
+    margin: 8px 20px;
+    font-size: 30px;
+    background: #FFF;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+}
+
+.desplegable .user p {
+    margin: auto 10px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.desplegable .user .icon {
+    color: #FFF;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 15px 8px;
+    cursor: pointer;
+}
+
+.desplegable .list {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.desplegable .list:hover {
+    cursor: pointer;
+    background: #F2F2F2;
+}
+
+.desplegable .list .img {
+    width: 40px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.desplegable .list .img img {
+    padding: 2px 5px;
+    max-height: 30px;
+}
+
+.desplegable .list .info {
+    margin: auto;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
